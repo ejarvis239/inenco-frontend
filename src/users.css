@@ -1,0 +1,40 @@
+#userpage {
+    margin-bottom: 20%;
+ 
+}
+
+#users {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    margin: 1em auto;
+}
+
+#userList {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+}
+
+p {
+    text-align: center
+}

@@ -1,0 +1,41 @@
+#PostArticleContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-family: sans-serif;
+  }
+  
+  #postArticleFormContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    font-family: sans-serif;
+  }
+
+  #postArticleFormTitleContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-family: sans-serif;
+    margin-bottom: 0%
+  }
+  ::placeholder {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100%;
+    font-stretch: normal;
+    word-spacing: 1%;
+    letter-spacing: 10%;
+  }
+  #Appx {
+    align-content: center;
+    text-align: center;
+  }

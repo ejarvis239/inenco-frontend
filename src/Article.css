@@ -1,0 +1,211 @@
+#bottom {
+  margin-bottom: 30%
+}
+#App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+} 
+
+#PostArticleContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#link {
+  margin-bottom: 5%
+}
+
+#loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 1%;
+  width: 250px;
+} 
+
+#logged {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+
+#loggedIn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  margin-left: 24%;
+}
+
+#ArticleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 700px) {
+
+#votebuttons {
+width:10px
+}
+}
+
+@media only screen and (min-width: 700px) {
+
+#votebuttons {
+width:30px
+}
+
+#articleTitle {
+margin-top: 80px;
+font-size: 40px;
+word-spacing: 10px;
+text-align: left;
+width: 600px;
+line-height: 1.5;
+align-self: center
+}
+
+#topicItems{
+  word-spacing: 10px;
+  text-align: right;
+  width: 600px;
+  line-height: 1.5;
+  align-self: center
+}
+
+#articleImage {
+  word-spacing: 10px;
+  text-align: right;
+  margin: 0px;
+  line-height: 1.5;
+  align-self: right
+}
+
+#articleBody {
+  font-size: 20px;
+  word-spacing: 10px;
+  text-align: justify;
+  width: 600px;
+  margin: 20px;
+  line-height: 1.5;
+  align-self: center
+}
+
+#articleVotes {
+  word-spacing: 10px;
+  text-align: right;
+  width: 600px;
+  line-height: 1.5;
+  align-self: center
+}
+
+#createdBy{
+  word-spacing: 10px;
+  text-align: left;
+  width: 600px;
+  line-height: 1.5;
+  align-self: center
+}
+
+#postCommentContainer {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  width: 700px;
+  align-self: center;
+}
+
+::placeholder  {
+  word-spacing: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: grey;
+  width: 600px;
+  line-height: 1.5;
+  align-self: center
+}
+
+#postCommentBox {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  width: 700px;
+  height: 150px;
+  align-self: center
+}
+
+#commentCount{
+  word-spacing: 10px;
+  text-align: right;
+  width: 600px;
+  line-height: 1.5;
+  align-self: center
+}
+
+#Responses{
+  word-spacing: 1px;
+  font-size: 15px;
+  text-align: left;
+  width: 600px;
+  line-height: 1;
+  align-self: center
+}
+
+#commentItems{
+  word-spacing: 10px;
+  text-align: left;
+  width: 600px;
+  line-height: 1.5;
+  align-self: center
+}
+
+#commentVotes{
+  word-spacing: 5px;
+  font-style: italic;
+  text-align: right;
+  width: 600px;
+  line-height: 1.5;
+  align-self: center
+}
+
+#commentBody{
+  word-spacing: 2px;
+  text-align: left;
+  width: 600px;
+  line-height: 1.5;
+  align-self: center;
+}
+
+#commentContainer {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  width: 700px;
+  align-self: center
+}
+
+#singleCommentContainer {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  width: 700px;
+  align-self: center
+}
+}
