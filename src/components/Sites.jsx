@@ -2,41 +2,38 @@ import React, { Component } from 'react';
 import "../App.css";
 import "../Article.css";
 import List from "./List";
-// import * as api from '../api.js'
+import * as api from '../api.js'
 import Nav from "./Nav.jsx";
 
 class Sites extends Component {
     state = {
-      articles: [],
+      sites: [],
     }
-  
     render() {
       return (
         <div>
           <Nav />
-          
           <List
-          articleList={this.state.articles} 
+          siteList={this.state.sites} 
           />
         </div>
       )
     }
-
     componentDidMount = () => {
-      this.fetchArticles();
+      this.fetchSites();
     };
 
-    componentDidUpdate = (prevProps) => {
-      if (prevProps.topic !== this.props.topic) {
-        this.fetchArticles();
-      }
-    }
+    // componentDidUpdate = (prevProps) => {
+    //   if (prevProps. !== this.props.) {
+    //     this.fetchSites();
+    //   }
+    // }
 
-    // fetchArticles = () => {
-    //   api.getArticles(this.props.topic).then(articles => {
-    //     this.setState({
-    //       articles })})
-    // };
+    fetchSites = () => {
+      api.getSites().then(sites => {
+        this.setState({
+          sites })})
+    };
     }
 
 export default Sites;

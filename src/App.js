@@ -9,7 +9,7 @@ import Home from './components/Home';
 import Users from './components/Users';
 import UserPage from './components/UserPage';
 import NotFound from './components/NotFound';
-// import Sites from "./components/Sites";
+import Sites from "./components/Sites";
 // import Site from "./components/Site";
 import SitePoster from './components/SitePoster';
 
@@ -38,8 +38,8 @@ class App extends Component {
          <Users path="/users" />
          <UserPage path="/users/:username" />
          <SitePoster path="/siteposter" user={this.state.user} />
-         {/* <Sites path="/articles" heading="articles" /> */}
-         {/* <Site path="/article/:article_id" heading="article" user={this.state.user} />  */}
+         <Sites path="/sites" heading="sites" />
+         {/* <Site path="/sites/:site_id" heading="site" user={this.state.user} />  */}
          <NotFound path="/error"/>
          <NotFound default />
         </Router>

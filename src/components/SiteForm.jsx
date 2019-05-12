@@ -29,111 +29,151 @@ class SiteForm extends Component {
     ) : (
       <div id="postArticleFormContainer">
         <form onSubmit={this.handleSubmit}>
-        <h1>Add Site</h1>
-        <div id="App">
-              <input 
+
+            <div class = "col-9-md-3"></div>
+            <div class = "col-md-9"><h1>Add Your Site</h1></div>
+          <br />
+
+    <div class="container myform">
+        <div class="row" >
+            <div class = "col-md-4"> House number:</div>
+            <div class = "col-md-8" id="App"><input
                 name="address_houseNumber"
                 id="title"
-                placeholder="House Number"
+                placeholder=""
                 onChange={this.handleChange}
-                required
-              />
-          </div>
-          <div id="App">
-              <input 
+                size = "100" required
+              /></div>
+            <br /><br /><br />
+    </div>
+
+      <div class="row">
+            <div class = "col-md-4"> Street</div>
+            <div class = "col-md-8" id="App"><input
                 name="street"
                 id="title"
-                placeholder="Street"
+                placeholder=""
                 onChange={this.handleChange2}
-                required
-              />
-          </div>
-          <div id="App">
-              <input 
+                size = "50" required
+            /></div>
+            <br /><br /><br />
+    </div>
+
+      <div class="row">
+            <div class = "col-md-4"> City:</div>
+            <div class = "col-md-8" id="App"><input
                 name="city"
                 id="title"
-                placeholder="City"
+                placeholder=""
                 onChange={this.handleChange3}
-                required
-              />
-          </div>
-          <div id="App">
-              <input 
+                size = "50" required
+            /></div>
+            <br /><br /><br />
+    </div>
+
+      <div class="row">
+            <div class = "col-md-4"> Postcode:</div>
+            <div class = "col-md-8" id="App"><input
                 name="postcode"
                 id="title"
-                placeholder="Postcode"
+                placeholder=""
                 onChange={this.handleChange4}
-                required
-              />
-          </div>
-          <div id="App">
-              <input 
+                size = "50" required
+            /></div>
+            <br /><br /><br />
+    </div>
+
+      <div class="row">
+            <div class = "col-md-4"> Telephone:</div>
+            <div class = "col-md-8" id="App"><input
                 name="telephone"
                 id="title"
-                placeholder="Telephone"
+                placeholder=""
                 onChange={this.handleChange5}
-                required
-              />
-          </div>
-          <div id="App">
-              <input 
+                size = "50" required
+            /></div>
+            <br /><br /><br />
+      </div>
+
+      <div class="row">
+            <div class = "col-md-4"> Manager:</div>
+            <div class = "col-md-8" id="App"><input
                 name="manager"
                 id="title"
-                placeholder="Manager"
+                placeholder=""
                 onChange={this.handleChange7}
-                required
-              />
-          </div>
-          <div id="App">
-              <input 
+                size = "50" required
+            /></div>
+            <br /><br /><br />
+    </div>
+
+      <div class="row">
+            <div class = "col-md-4"> Floorspace:</div>
+            <div class = "col-md-8" id="App"><input
                 name="floorspace"
                 id="title"
-                placeholder="Floorspace"
+                placeholder=""
                 onChange={this.handleChange8}
-                required
-              />
-          </div>
-          <div id="App">
-          <div id="App">
-              <input 
+                size = "50" required
+            /></div>
+             <br /><br /><br />
+    </div>
+
+      <div class="row">
+            <div class = "col-md-4"> AMR enabled (yes or no):</div>
+            <div class = "col-md-8" id="App"><input
                 name="AMRenabled"
                 id="title"
-                placeholder="AMR enabled (yes or no)"
+                placeholder=""
                 onChange={this.handleChange6}
-                required
-              />
-          </div>
-          <div id="App">
-              <div id="App">
-              <input 
+                size = "50" required
+              /></div>
+            <br /><br /><br />
+    </div>
+
+      <div class="row">
+            <div class = "col-md-4"> Gas meter number:</div>
+            <div class = "col-md-8" id="App"><input
                 name="gas meter"
                 id="title"
-                placeholder="Gas meter number"
+                placeholder=""
                 onChange={this.handleChange9}
-                required
-              />
-          </div>
-          <div id="App">
-              <input 
+                size = "50" required
+              /></div>
+          <br /><br /><br />
+      </div>
+
+      <div class="row">
+            <div class = "col-md-4"> Electricity meter number:</div>
+            <div class = "col-md-8" id="App"><input
                 name="electricity meter number"
                 id="title"
-                placeholder="Electricity meter number"
+                placeholder=""
                 onChange={this.handleChange10}
-                required
-              />
-          </div>
-            </div>
-          </div>
-          <br />
-          <div id="App">
-          <div id="App">
-              <input type="submit" value="Submit" />
-            </div>
-          </div>
-        </form>
+                size = "50" required
+            /></div>
+            <br /><br /><br /></div>
       </div>
-    );
+
+      <br /><br />
+
+        <div className="row">
+            <div class = "col-md-4 submit" id="App"> </div>
+            <div class = "col-md-6 submit"><input type="submit"
+                   value="Submit"/>
+            </div>
+            {/*<div class = "col-md-2 submit"> </div>*/}
+                <br />
+        </div>
+
+  </form>
+
+
+  </div>
+
+  );
   }
+
   handleChange = event => {
     const value = event.target.value;
     this.setState({

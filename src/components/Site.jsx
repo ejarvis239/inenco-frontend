@@ -7,27 +7,26 @@ import PropTypes from "prop-types";
 
 class Site extends Component {
     state = {
-      article: null,
+      site: null,
     }
   
     render() {
       return (
         <div>
-          {this.state.article && this.state.comments && <SingleSite
-          article={this.state.article} manager={this.state.article}
-          />}
+          {this.state.site && <SingleSite
+          site={this.state.site}/>}
         </div>
       )
     }
 
     componentDidMount = () => {
-      this.fetchArticle();
+      this.fetchSite();
     };
 
-    fetchArticle = () => {
-      api.getSite(this.props.article_id).then(article => {
+    fetchSite = () => {
+      api.getSite(this.props.site_id).then(site => {
         this.setState({
-          article })})
+          site })})
           .catch((err) => {
             this.props.navigate('/error', {replace: true, state: {msg: err.message}})
           })

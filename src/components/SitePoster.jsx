@@ -15,7 +15,6 @@ const SitePoster = (props) => {
                     <SiteForm user={props.user}/>
                     </div>
             </div>
-
         )
 }
     
